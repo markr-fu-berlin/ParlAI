@@ -1,6 +1,8 @@
 #! /usr/bin/env bash
 
-
+if [[ ! -e data ]]; then
+    mkdir data
+fi
 
 if [ ! "$(docker ps -q -f name=parlai)" ]; then
     docker run -d --name parlai --mount type=bind,source="$(pwd)"/data,target=/app/data parlai_docker \
