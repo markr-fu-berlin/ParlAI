@@ -171,6 +171,16 @@ task_list = [
         ),
     },
     {
+        "id": "hotpotqaintegrationtest",
+        "display_name": "hotpotqa-integrationtest",
+        "task": "hotpotqaintegrationtest",
+        "tags": ["All", "QA"],
+        "description": (
+            "a teacher that loads and reads HotPotQA data."
+            "Agents for Reinforement Learning-QA will be added soon"
+        )
+    },
+    {
         "id": "DealNoDeal",
         "display_name": "Deal or No Deal",
         "task": "dealnodeal",
